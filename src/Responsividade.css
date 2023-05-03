@@ -1,0 +1,112 @@
+@media (max-width: 660px) and (orientation: portrait) {
+.Navbar {
+  position: fixed;
+  top: 0;
+  height: 8rem;
+  padding: 0 2rem;
+}
+.Logo {
+  font-size: 2rem;
+}
+.Guias {
+   position: fixed;
+   flex-direction: column;
+   gap: 4rem;
+   justify-content: flex-end;
+   align-items: flex-start;
+   background-color: #1B1B1B;
+   width: 50%;
+   height: 36rem;
+   top: 0;
+   right: -50%;
+   border-bottom-left-radius: 1rem;
+   border-left: solid 0.2rem gray;
+   border-bottom: solid 0.2rem gray;
+   padding: 0 16%;
+   z-index: 100;
+   padding-bottom: 16%;
+   transition: linear 300ms;
+   transition-delay: 250ms;
+}
+.Guias.on {
+  right: 0;
+}
+.OnMenuMobileButton {
+  display: flex;
+}
+#OffMenuMobileButton {
+  display: block;
+}
+.Home {
+  height: 100vh;
+  flex-direction: column;
+  padding-top: 8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.Apresentacao {
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 8rem;
+}
+.Apresentacao h1 {
+  font-size: 3.2rem;
+  color: white;
+}
+.Apresentacao p {
+  max-width: 90%;
+  font-size: 1.4rem;
+  color: white;
+  line-height: 2rem;
+}
+.Info-a-direita {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.Info-a-direita img {
+  max-width: 90%;
+}
+.Contatos {
+  bottom: 8%;
+  left: 0;
+}
+.Projetos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6rem;
+  padding-top: 14rem;
+  padding-bottom: 6rem;
+  overflow-y: auto;
+  flex-direction: column;
+}
+.Habilidades {
+  height: 100vh;
+  padding-top: 8rem;
+}
+.Habilidades {
+  gap: 4rem;
+}
+.Habilidades li {
+  max-width: 80%;
+}
+.Habilidades li p {
+  font-size: 1.2rem;
+}
+.Habilidades li:last-child p {
+  font-size: 1.10rem;
+}
+}
+@media (min-width: 760px) and (orientation: portrait) {
+  .Projetos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

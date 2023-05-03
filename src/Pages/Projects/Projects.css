@@ -1,0 +1,18 @@
+.Projetos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  padding: 4rem;
+  min-height: 0vh;
+}
+.Projetos li {
+  width: 26rem;
+  min-height: 18rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.Projetos li:hover {
+  box-shadow: 0 0 0 0.36rem #8A2BE2;
+}

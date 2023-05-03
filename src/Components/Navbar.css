@@ -1,0 +1,88 @@
+.Navbar {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #0D0D0D;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255,255,255, 0.8);
+  padding: 0 8rem;
+  z-index: 200;
+}
+.Logo {
+  font-size: 2.4rem;
+  font-family: 'Inter', Sans-Serif;
+  color: orange;
+}
+.Guias {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6.8rem;
+}
+#OffMenuMobileButton {
+  position: absolute;
+  top: 6.8%;
+  left: 10%;
+  font-size: 2.8rem;
+  display: none;
+  border-radius: 0.4rem;
+  padding: 0 0.4rem;
+}
+#OffMenuMobileButton:hover {
+  box-shadow: 0 0 0 0.28rem #8A2BE2;
+}
+.OnMenuMobileButton {
+  position: absolute;
+  right: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  display: none;
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+}
+.OnMenuMobileButton:hover {
+  box-shadow: 0 0 0 0.28rem #8A2BE2;
+}
+.OnMenuMobileButton div {
+  width: 2.8rem;
+  height: 0.6rem;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+.Guias li a {
+  position: relative;
+  font-size: 2rem;
+  color: rgba(255,255,255, 0.8);
+}
+.selected::after {
+    position: absolute;
+    left: 0;
+    bottom: -0.6rem;
+    background-color: #8A2BE2;
+    content: "";
+    width: 100%;
+    height: 0.6rem;
+    border-radius: 0.15rem;
+    animation: selected 400ms ease-out;
+}
+
+@keyframes selected {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
