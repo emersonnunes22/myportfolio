@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/emersonnunes22/myportfolio.git/static/css/main.f843f216.css",
+    "main.js": "/emersonnunes22/myportfolio.git/static/js/main.51f5d742.js",
+    "static/media/Ilustration.svg": "/emersonnunes22/myportfolio.git/static/media/Ilustration.f6a56102bd199fd01427b1835d6bcf70.svg",
+    "index.html": "/emersonnunes22/myportfolio.git/index.html",
+    "main.f843f216.css.map": "/emersonnunes22/myportfolio.git/static/css/main.f843f216.css.map",
+    "main.51f5d742.js.map": "/emersonnunes22/myportfolio.git/static/js/main.51f5d742.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f843f216.css",
+    "static/js/main.51f5d742.js"
+  ]
+}
