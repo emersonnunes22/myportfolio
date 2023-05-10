@@ -17,9 +17,10 @@
   align-items: center;
   padding: 4rem;
   border-radius: 1.8rem;
+  transition: 200ms linear;
 }
 .Habilidades li:hover {
-  box-shadow: 0 0 0 0.36rem #8A2BE2;
+  box-shadow: 0 0 0 0.4rem #8A2BE2;
 }
 .Habilidades li p {
   font-size: 1.68rem;

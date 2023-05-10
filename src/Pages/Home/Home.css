@@ -10,23 +10,40 @@
 }
 .Apresentacao {
   width: 70%;
-  height: 100%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 3.6rem;
 }
-.Apresentacao h1 {
-  font-size: 6rem;
-  color: white;
-  line-height: 6rem;
+.Titulo {
+  width: 100%;
+  min-height: 0%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
-.Apresentacao p {
+.SubTitulo {
+  width: 100%;
+  min-height: 0%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.Titulo h1 {
+  font-size: 6rem;
+   color: white;
+  line-height: 6rem;
+  text-align: center;
+  padding: auto 0;
+  flex-wrap: wrap;
+}
+.SubTitulo p {
   max-width: 80%;
-  font-size: 1.16rem;
+  font-size: 1.8rem;
   color: white;
-  line-height: 1.8rem;
+  line-height: 2.4rem;
   flex-wrap: wrap;
 }
 .MyName {
@@ -37,7 +54,7 @@
 .MyName::after {
   position: absolute;
   left: 0;
-  bottom: -0.2rem;
+  bottom: -0.10rem;
   background-color: #8A2BE2;   
   content: "";
   width: 10%;

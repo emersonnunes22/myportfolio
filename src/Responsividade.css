@@ -1,3 +1,10 @@
+@media (max-height: 700px) and (orientation: portrait) {
+
+  .Apresentacao {
+    padding-top: 0rem;
+    gap: 2rem;
+  }
+}
 @media (max-width: 660px) and (orientation: portrait) {
 .Navbar {
   position: fixed;
@@ -50,16 +57,24 @@
   align-items: center;
   justify-content: flex-start;
   padding-top: 8rem;
+  text-align: center;
 }
-.Apresentacao h1 {
-  font-size: 3.2rem;
-  color: white;
+.Titulo h1 {
+  font-size: 4.6rem;
+  line-height: 4.8rem;
 }
-.Apresentacao p {
+.SubTitulo p {
   max-width: 90%;
   font-size: 1.4rem;
-  color: white;
-  line-height: 2rem;
+}
+.Titulo {
+  justify-content: center;
+}
+.SubTitulo {
+  justify-content: center;
+}
+.MyName::after {
+  bottom: -0.2em;
 }
 .Info-a-direita {
   width: 100%;
@@ -84,8 +99,17 @@
   gap: 6rem;
   padding-top: 14rem;
   padding-bottom: 6rem;
-  overflow-y: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
   flex-direction: column;
+}
+.Projetos li {
+  width: 30rem;
+  min-height: 20rem;
+  margin: 0;
+}
+.Projetos li p {
+  font-size: 1.2rem;
 }
 .Habilidades {
   height: 100vh;
@@ -105,8 +129,91 @@
 }
 }
 @media (min-width: 760px) and (orientation: portrait) {
+
+  .Home {
+   flex-direction: column;
+   justify-content: center;
+  }
+  .Apresentacao {
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .Titulo {
+    justify-content: center;
+  }
+  .SubTitulo {
+    justify-content: center;
+  }
+  .Titulo h1 {
+    font-size: 6.8rem;
+  }
+  .SubTitulo p {
+    font-size: 1.48rem;
+  }
+  .Info-a-direita {
+    height: 40%;
+  }
+  .Contatos {
+    bottom: -2rem;
+    right: 0;
+    left: 0;
+  }
   .Projetos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 8rem;
+  }
+}
+@media (max-width: 800px) and (orientation: landscape) {
+  .Titulo h1 {
+    font-size: 4.6rem;
+  }
+  .Info-a-direita img {
+    max-width: 40rem;
+  }
+  .Projetos {
+    padding: 6rem;
+  }
+  .Habilidades li {
+    width: 46rem;
+    height: 4rem;
+  }
+  .Habilidades li p {
+    font-size: 1.2rem;
+  }
+  .Habilidades li:last-child p {
+    font-size: 1.12rem;
+  }
+}
+@media (max-width: 1080px) and (orientation: landscape) {
+  html {
+    font-size: 6.8px;
+  }
+  }
+@media (min-width: 1440px) and (orientation: landscape) {
+  html {
+    font-size: 11px;
+  }
+  .Apresentacao p {
+    line-height: 3.6rem;
+  }
+  .Projetos {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4rem;
+    padding: 8rem;
+  }
+}
+@media (min-width: 1920px) and (orientation: landscape) {
+  .Titulo h1 {
+    font-size: 8rem;
+  }
+  .SubTitulo p {
+    font-size: 1.88rem;
+    line-height: 2.8rem;
+  }
+  .Info-a-direita img {
+    max-width: 60rem;
   }
 }
