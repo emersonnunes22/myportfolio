@@ -196,8 +196,9 @@
   html {
     font-size: 11px;
   }
-  .Apresentacao p {
-    line-height: 3.6rem;
+  .SubTitulo p {
+    font-size: 1.23rem;
+    line-height: 2.6rem;
   }
   .Projetos {
     grid-template-columns: repeat(4, 1fr);
@@ -211,7 +212,7 @@
   }
   .SubTitulo p {
     font-size: 1.88rem;
-    line-height: 2.8rem;
+    line-height: 3rem;
   }
   .Info-a-direita img {
     max-width: 60rem;
