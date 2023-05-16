@@ -187,17 +187,16 @@
     font-size: 1.12rem;
   }
 }
-@media (max-width: 1080px) and (orientation: landscape) {
-  html {
-    font-size: 6.8px;
+/*@media (max-width: 1080px) and (orientation: landscape) {
+ 
   }
-  }
+  }*/
 @media (min-width: 1440px) and (orientation: landscape) {
-  html {
-    font-size: 11px;
+  .Titulo h1 {
+    font-size: 7.2rem;
   }
   .SubTitulo p {
-    font-size: 1.23rem;
+    font-size: 1.4rem;
     line-height: 2.6rem;
   }
   .Projetos {
@@ -207,14 +206,22 @@
   }
 }
 @media (min-width: 1920px) and (orientation: landscape) {
+  .Apresentacao {
+    gap: 5rem;
+  }
   .Titulo h1 {
-    font-size: 8rem;
+    font-size: 10rem;
   }
   .SubTitulo p {
-    font-size: 1.88rem;
+    font-size: 1.64rem;
     line-height: 3rem;
   }
   .Info-a-direita img {
     max-width: 60rem;
   }
+}
+@media (min-width: 3840px) and (orientation: landscape) {
+ html {
+   font-size: 20px;
+ }
 }
